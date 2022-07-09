@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>hitGub: hit Gub, hit GitHub</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="document.getElementById('userInput').focus()">
+<div class="top">
+    <img src="hit.svg">
+    <input type="text" id="userInput" onKeyDown="keyEv(event)" /><input type="button" value="GO!" onclick="gotoGitHub()"/>
+</div>
+<h1>hit `Gub` on your keyboard and press ENTER / click GO!</h1>
+<div class="qa">
+        <div class="question">What is Gub?</div>
+        <div class="answer">Gub is the abbreviation of 'Garbage University Bureaucrat' (a rubbish official who occupies a post in a university and abuses their power at the expense of students' rights)</div>
+
+        <div class="question">Examples of Gubs:</div class="question">
+        <div class="answer">Guanjun GAO, Zhijun GAO, Yaojiong WU and Jingsong YU (Source: The Internet)</div>
+
+        <div class="question">Why hit Gub?</div class="question">
+        <div class="answer">Hitting Gub may not hit a bull's eye, however you'll hit GitHub! hit Gub, hit GitHub</div>
+</div>
+<div class="footer">
+    © 2022 hitGub
+</div>
+</body>
+<script>
+    function keyEv(event) {
+        if(event.keyCode==13) {
+            gotoGitHub();
+        }
+    }
+
+    function gotoGitHub() {
+        var userInput = document.getElementById("userInput").value;
+        if(userInput.toUpperCase() == "GUB") {
+            window.open("https://www.GitHub.com");
+        }
+    }
+</script>
+</html>
